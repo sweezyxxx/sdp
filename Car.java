@@ -46,16 +46,6 @@ public class Car {
         }
 
         public Car build() {
-            if (make == null || make.isEmpty()) {
-                throw new IllegalStateException("Make cannot be null or empty");
-            }
-            if (model == null || model.isEmpty()) {
-                throw new IllegalStateException("Model cannot be null or empty");
-            }
-            if (year < 1886) {
-                throw new IllegalStateException("Invaid year");
-            }
-
             return new Car(this);
         }
     }
@@ -64,16 +54,5 @@ public class Car {
     public String toString() {
         return String.format("Car: %s %s (%d)\nColor: %s\nElectric: %b",
             make, model, year, color, isElectric);
-    }
-    public static void main(String[] args) {
-        Car myCar = new Car.Builder()
-                .setMake("Tesla")
-                .setModel("Model 3")
-                .setYear(2023)
-                .setColor("Red")
-                .setIsElectric(true)
-                .build();
-
-        System.out.println(myCar);
     }
 }
