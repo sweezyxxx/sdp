@@ -5,9 +5,11 @@ public class Main {
                 .setModel("Mustang")
                 .setYear(2010)
                 .setColor("Blue")
-                .setIsElectric(false)
+                .setIsElectric(true)
                 .build();
 
+        myCar.setColor("Black");
+        
         System.out.println(myCar);
     }
 }
