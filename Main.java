@@ -1,15 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Car myCar = new Car.Builder()
-                .setMake("Dodge")
-                .setModel("Mustang")
-                .setYear(2010)
-                .setColor("Blue")
-                .setIsElectric(true)
-                .build();
+        System.out.println("-Factory Pattern Demo-");
+        factory.FactoryDemo.main(args);
 
-        myCar.setColor("Black");
-        
-        System.out.println(myCar);
+        System.out.println("\n-Abstract Factory Pattern Demo-");
+        abstractfactory.AbstractFactoryDemo.main(args);
     }
 }
