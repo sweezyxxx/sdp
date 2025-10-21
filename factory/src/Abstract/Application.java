@@ -5,8 +5,8 @@ class Application {
     private Checkbox checkbox;
 
     public Application(GUIFactory factory) {
-        button = factory.createButton();
-        checkbox = factory.createCheckbox();
+        this.button = factory.createButton();
+        this.checkbox = factory.createCheckbox();
     }
 
     public void renderUI() {

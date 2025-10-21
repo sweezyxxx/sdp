@@ -11,6 +11,9 @@ public class Main {
             factory = new MacFactory();
         }
 
+        Button button = factory.createButton();
+        button.render();
+
         Application app = new Application(factory);
         app.renderUI();
     }

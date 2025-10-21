@@ -3,7 +3,7 @@ public class Main {
         MediaPlayer mp3 = new Mp3Player();
         mp3.play("song.mp3");
 
-        MediaPlayer mp4 = new Mp4Adapter(new AdvancedAudioPlayer());
+        MediaPlayer mp4 = new Mp4Adapter();
         mp4.play("video.mp4");
     }
 }
